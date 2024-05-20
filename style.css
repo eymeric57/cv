@@ -5,27 +5,29 @@ body {
     color: white;
 }
 
-canvas {
-    position: fixed;
+#c {
+    position:fixed;
     top: 0;
     left: 0;
+   
 }
 
 main {
     width: 100vw;
     height: 200vw;
     z-index: 99;
-    position: absolute;
+    position: relative;
     justify-content: center;
     text-align: center;
-    pointer-events: none;
     font-size: 5vh;
+   
 }
 
 section {
     min-height: 100vh;
     padding: 20px;
     font-size: 4vh;
+    z-index: 1;
 }
 
 #scrollProgress {
@@ -37,7 +39,48 @@ section {
 }
 
 button {
+    margin-top: 650px;
+    margin-left: 00px;
     width: 200px;
     height: 200px;
-   background: red;
+    
+}
+
+.button1 {
+    margin-top: 350px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: scale-in-center 2s forwards  ;
+    position: ralative;
+    
+}
+
+@keyframes scale-in-center {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+
+
+
+a {
+    position: absolute;
+        cursor: pointer;
+        color: red;
+        z-index: 2;
+}
+
+#end {
+    background: url(./capture.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

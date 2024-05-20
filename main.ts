@@ -160,12 +160,14 @@ animate()
 
 ///////////////////////////
 
+const end=document.getElementById('end')
 
-
-const test1 = document.getElementById("btn1")
 window.addEventListener('scroll', () => {
 if ( scrollPercent == 100){
-    test1.style.backgroundColor='blue'
+    end.style.visibility='visible'
+   
+    
 }else {
-    test1.style.backgroundColor='red'
+    end.style.visibility='hidden'
+   
 }})
