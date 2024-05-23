@@ -61,7 +61,7 @@ animationScripts.push({
 
 animationScripts.push({
     start: 60,
-    end: 101,
+    end: 100,
     func: () => {
         camera.position.x = lerp(5, 0, scalePercent(60, 100))
         camera.position.y = lerp(5, 3.4, scalePercent(60, 100))
@@ -156,10 +156,9 @@ window.scrollTo({ top: 0, behavior: 'smooth' })
 animate()
 
 
-
 ///////////////////////////
 
-const end=document.getElementById('end')
+const end:any =document.getElementById('end')
 
 window.addEventListener('scroll', () => {
 if ( scrollPercent == 100){
@@ -172,4 +171,8 @@ if ( scrollPercent == 100){
 }})
 
 
+
+
+
+///////::::::::::::::::::: 
 
