@@ -38,13 +38,6 @@ section {
     font-size: 3vh;
 }
 
-button {
-    margin-top: 650px;
-    margin-left: 00px;
-    width: 200px;
-    height: 200px;
-    
-}
 
 .button1 {
     margin-top: 350px;
@@ -84,3 +77,44 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
 }
+ /**  scren cv part **/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+ .screen {
+    background-color: black;
+    border: 20px solid rgb(240, 230, 230);
+    height: 100vh;
+    width: 100vw;
+ }
+
+ button {
+    border: solid 1px white ;
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    margin-left: 20px;
+ }
+ button:hover {
+    cursor: pointer;
+
+    color: greenyellow;
+    border-color: greenyellow;
+   
+    
+ }
+
+ .passion {
+    margin-left: 20px;
+    border: solid white 2px;
+    width: 100px;
+    visibility: hidden;
+   
+
+    li {
+        list-style: none;
+    }
+ }

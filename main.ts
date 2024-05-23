@@ -105,8 +105,7 @@ window.addEventListener('scroll', () =>
                     document.body.scrollHeight) -
                     document.documentElement.clientHeight)) *
             100
-        ;(document.getElementById('scrollProgress') as HTMLDivElement).innerText =
-            'Scroll Progress : ' + scrollPercent.toFixed(2)
+        ;
     }
     
 
@@ -171,3 +170,6 @@ if ( scrollPercent == 100){
     end.style.visibility='hidden'
    
 }})
+
+
+

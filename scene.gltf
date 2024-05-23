@@ -7,8 +7,7 @@
     {
       "name": "Scene",
       "nodes": [
-        70,
-        71
+        74
       ]
     }
   ],
@@ -34,14 +33,23 @@
     },
     {
       "name": "Plane002_1",
+      "extras": {
+        "name": "Plane002_1"
+      },
       "mesh": 0
     },
     {
       "name": "Plane002_2",
+      "extras": {
+        "name": "Plane002_2"
+      },
       "mesh": 1
     },
     {
       "name": "Plane002_3",
+      "extras": {
+        "name": "Plane002_3"
+      },
       "mesh": 2
     },
     {
@@ -375,14 +383,23 @@
     },
     {
       "name": "Cube020_1",
+      "extras": {
+        "name": "Cube020_1"
+      },
       "mesh": 19
     },
     {
       "name": "Cube020_2",
+      "extras": {
+        "name": "Cube020_2"
+      },
       "mesh": 20
     },
     {
       "name": "Cube020_3",
+      "extras": {
+        "name": "Cube020_3"
+      },
       "mesh": 21
     },
     {
@@ -512,10 +529,16 @@
     },
     {
       "name": "Cylinder008_1",
+      "extras": {
+        "name": "Cylinder008_1"
+      },
       "mesh": 27
     },
     {
       "name": "Cylinder008_2",
+      "extras": {
+        "name": "Cylinder008_2"
+      },
       "mesh": 28
     },
     {
@@ -797,22 +820,37 @@
     },
     {
       "name": "Cylinder001_1",
+      "extras": {
+        "name": "Cylinder001_1"
+      },
       "mesh": 42
     },
     {
       "name": "Cylinder001_2",
+      "extras": {
+        "name": "Cylinder001_2"
+      },
       "mesh": 43
     },
     {
       "name": "Cylinder001_3",
+      "extras": {
+        "name": "Cylinder001_3"
+      },
       "mesh": 44
     },
     {
       "name": "Cylinder001_4",
+      "extras": {
+        "name": "Cylinder001_4"
+      },
       "mesh": 45
     },
     {
       "name": "Cylinder001_5",
+      "extras": {
+        "name": "Cylinder001_5"
+      },
       "mesh": 46
     },
     {
@@ -886,10 +924,16 @@
     },
     {
       "name": "Cylinder002_1",
+      "extras": {
+        "name": "Cylinder002_1"
+      },
       "mesh": 48
     },
     {
       "name": "Cylinder002_2",
+      "extras": {
+        "name": "Cylinder002_2"
+      },
       "mesh": 49
     },
     {
@@ -928,7 +972,7 @@
       "translation": [
         0.8052637577056885,
         2.7570595741271973,
-        -0.6359869837760925
+        -0.6517617762011909
       ],
       "scale": [
         0.02026822604238987,
@@ -943,10 +987,16 @@
     },
     {
       "name": "Cylinder012_1",
+      "extras": {
+        "name": "Cylinder012_1"
+      },
       "mesh": 51
     },
     {
       "name": "Cylinder012_2",
+      "extras": {
+        "name": "Cylinder012_2"
+      },
       "mesh": 52
     },
     {
@@ -977,10 +1027,16 @@
     },
     {
       "name": "Cylinder013_1",
+      "extras": {
+        "name": "Cylinder013_1"
+      },
       "mesh": 53
     },
     {
       "name": "Cylinder013_2",
+      "extras": {
+        "name": "Cylinder013_2"
+      },
       "mesh": 54
     },
     {
@@ -1096,6 +1152,13 @@
       ]
     },
     {
+      "translation": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
       "rotation": [
         -0.015020185150206089,
         0,
@@ -1112,7 +1175,8 @@
         "name": "Point.002"
       },
       "children": [
-        68
+        68,
+        69
       ],
       "extensions": {
         "KHR_lights_punctual": {
@@ -1121,7 +1185,10 @@
       }
     },
     {
-      "name": "NEWBACKcv.glb",
+      "name": "NEWBACKcvglb",
+      "extras": {
+        "name": "NEWBACKcv.glb"
+      },
       "children": [
         0,
         4,
@@ -1172,7 +1239,14 @@
         65,
         66,
         67,
-        69
+        70
+      ]
+    },
+    {
+      "translation": [
+        0,
+        0,
+        -1
       ]
     },
     {
@@ -1182,11 +1256,24 @@
         7.5
       ],
       "name": "DirectionalLight",
+      "extras": {
+        "name": "DirectionalLight"
+      },
+      "children": [
+        72
+      ],
       "extensions": {
         "KHR_lights_punctual": {
           "light": 2
         }
       }
+    },
+    {
+      "name": "scene (2).gltf",
+      "children": [
+        71,
+        73
+      ]
     }
   ],
   "cameras": [
