@@ -20,10 +20,12 @@ camera.position.z = 8.964;
 
 const geometry = new THREE.BoxGeometry();
 const material = new THREE.MeshBasicMaterial({
-    color: 0x00ff00,
+    color: 0x056ff00,
+    opacity: 0, // Opacité réglée à 50% (valeur entre 0 et 1)
+    transparent: true,
 });
 
-const cube = new THREE.Mesh(geometry, material);
+const cube = new THREE.Mesh(geometry,material);
 cube.position.set(0, 3.2, -2);
 
 scene.add(cube);
@@ -52,7 +54,7 @@ animationScripts.push({
 
 animationScripts.push({
     start: 60,
-    end: 100,
+    end: 101,
     func: () => {
         camera.position.x = lerp(5, 0, scalePercent(60, 100));
         camera.position.y = lerp(5, 3.4, scalePercent(60, 100));
@@ -71,7 +73,7 @@ scene.add(gridHelper);
 let scrollY = 0;
 window.addEventListener('scroll', () => {
     scrollY = window.scrollY;
-    console.log(scrollY);
+    
 });
 
 let scrollPercent = 0;
@@ -83,6 +85,9 @@ document.body.onscroll = () => {
             ((document.documentElement.scrollHeight || document.body.scrollHeight) -
                 document.documentElement.clientHeight)) *
         100;
+        ;(document.getElementById('scrollProgress') ).innerText =
+            'Scroll Progress : ' + scrollPercent.toFixed(2)
+        
 };
 
 renderer.setSize(window.innerWidth, window.innerHeight);
@@ -92,6 +97,7 @@ function playScrollAnimations() {
     animationScripts.forEach((a) => {
         if (scrollPercent >= a.start && scrollPercent < a.end) {
             a.func();
+           
         }
     });
 }
@@ -112,15 +118,20 @@ function render() {
     renderer.render(scene, camera);
 }
 
+
+
 window.scrollTo({ top: 0, behavior: 'smooth' });
 animate();
 
 const end = document.getElementById('end');
 
 window.addEventListener('scroll', () => {
-    if (scrollPercent === 100) {
-        end.style.visibility = 'visible';
-    } else {
+    if (scrollPercent <= 99) {
         end.style.visibility = 'hidden';
+    } else {
+        end.style.visibility = 'visible';
     }
+   
 });
+
+console.log(scrollY);

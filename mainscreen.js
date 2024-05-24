@@ -18,8 +18,10 @@ function hophop(id, callback) {
             clearInterval(timer);
             if (callback) callback();
         }
-    }, 150);
+    }, 70);
 }
+
+
 
 function chain() {
     hophop("test", function() {
@@ -28,7 +30,6 @@ function chain() {
         hophop("test2", function() {
             competence.style.opacity = '1';
             competence.style.transition = " 0.2s";
-            
             hophop("test3", function() {
                 experience.style.opacity = '1';
                 experience.style.transition = "0.2s";
