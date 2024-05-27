@@ -13,6 +13,8 @@ body {
    
 }
 
+
+
 main {
     width: 100vw;
     height: 200vw;
@@ -40,32 +42,12 @@ section {
 }
 
 
-.button1 {
-    margin-top: 350px;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    animation: scale-in-center 2s forwards  ;
-    position: ralative;
-    
-}
-
-@keyframes scale-in-center {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(1.5);
-    }
-}
 
 
 
 
-a {
+
+.contact {
     position: absolute;
         cursor: pointer;
         color: red;
@@ -73,13 +55,30 @@ a {
 }
 
 #end {
-    background: url(./capture.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    visibility: hidden;
-   
+   visibility: hidden; 
+  
 }
+
+#test {
+    margin: 250px auto;
+}
+
+#doteAnime {
+animation: dote 1s infinite;
+}
+
+@keyframes dote {
+    0%  {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+
+
  /**  screen cv part **/
 * {
     margin: 0;
@@ -87,11 +86,21 @@ a {
     box-sizing: border-box;
     font-size: 1rem;
 }
+
+
  .screen {
     background-color: black;
-    border: 20px solid rgb(240, 230, 230);
-    height: 100vh;
-    width: 100vw;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    padding: 10px;
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+ 
+  
+   
  }
 
  button {
@@ -111,29 +120,81 @@ a {
     
  }
 
- .passion {
-    margin-left: 20px;
-    border: solid white 2px;
-    width: 100px;
-    visibility: hidden;
- }
-
- 
+  .cv {
+    width: 50%;
+  }
  li {
     list-style: none;
  
 }
- p {
+.cmd {
+    padding: 10px 0;
     color: green;
  }
 
 
  h2 {
     color: red;
+    padding-bottom: 
+    5px;
  }
 
- #atout, #competence, #contact,#formation, #experience {
+ #atout, #competence, #contact,#formation, #experience, #contact {
     opacity: 0;
   
     
+ }
+
+
+ #top {
+   
+    color: black;
+    font-size: 0.8rem;
+    text-align: center;
+    display: flex;
+   align-items: center;
+   gap: 10px;
+   padding-left: 10px;
+ }
+
+ .navbar {
+
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    height: 25px;
+    border-top: 1px grey solid;
+ 
+   
+ }
+
+ #topEnd {
+    display: flex;
+padding: 5px 10px;
+    align-items: center;
+
+ }
+
+ #cross {
+    color: black;
+    border: solid black 2px;
+
+ }
+
+ #cross:hover {
+   
+    border-color: grey;
+    cursor: pointer;
+    scale: 1.05;
+    transition: 0.5s;
+
+    
+ }
+
+ .borderScreen {
+    border-left: solid 1px grey;
+    border-right: solid 1px grey;
+    height: 100vh;
  }
