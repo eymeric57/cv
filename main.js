@@ -18,7 +18,7 @@ const camera = new THREE.PerspectiveCamera(
 );
 
 // Définir une couleur beige clair
-const beigeColor = 0xf5f5dc;
+const beigeColor = 0xF5F5DC;
 
 // Ajouter un fond de couleur
 scene.background = new THREE.Color(beigeColor); // couleur beige clair
@@ -52,21 +52,26 @@ function render() {
     renderer.render(scene, camera);
 }
 
-// Ajout de la lumière
-const ambientLight = new THREE.AmbientLight(0xffffff, 0.5); // lumière ambiante douce
+// Ajout de la lumière ambiante
+const ambientLight = new THREE.AmbientLight(0xffffff, 2.20); // lumière ambiante avec intensité 1
+ambientLight.position.set(0, 1, 11);
 scene.add(ambientLight);
 
+
+
+// Ajout d'une lumière directionnelle
 const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
-directionalLight.position.set(5, 10, 7.5);
+directionalLight.position.set(1, 5, 2);
 directionalLight.castShadow = true;
 directionalLight.shadow.mapSize.width = 1024;
 directionalLight.shadow.mapSize.height = 1024;
 scene.add(directionalLight);
 
+
 // Ajout d'un plan pour le sol avec un matériau standard
 const planeGeometry = new THREE.PlaneGeometry(20, 20);
 const planeMaterial = new THREE.MeshStandardMaterial({ 
-    color: beigeColor,
+    color: 0xF5F5DC,
     roughness: 1,
     metalness: 0
 });
@@ -82,11 +87,12 @@ const material = new THREE.MeshStandardMaterial({
     color: 0x056ff00,
     opacity: 0, 
     transparent: true,
+   
 });
 
 const cube = new THREE.Mesh(geometry, material);
 cube.position.set(0, 3.2, -2);
-cube.castShadow = true; // Activer les ombres pour le cube
+cube.castShadow = false; // Activer les ombres pour le cube
 cube.receiveShadow = true;
 scene.add(cube);
 
@@ -130,7 +136,7 @@ document.body.onscroll = () => {
         100;
 };
 
-renderer.setPixelRatio(window.devicePixelRatio);
+
 
 function playScrollAnimations() {
     animationScripts.forEach((a) => {
@@ -170,3 +176,8 @@ function lerp(x, y, a) {
 function scalePercent(start, end) {
     return (scrollPercent - start) / (end - start);
 }
+
+
+renderer.setPixelRatio(window.devicePixelRatio);
+
+
