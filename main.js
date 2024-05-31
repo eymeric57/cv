@@ -18,7 +18,7 @@ const camera = new THREE.PerspectiveCamera(
 );
 
 // Définir une couleur beige clair
-const beigeColor = 0xF5F5DC;
+const beigeColor = 0x707070;
 
 // Ajouter un fond de couleur
 scene.background = new THREE.Color(beigeColor); // couleur beige clair
@@ -68,10 +68,18 @@ directionalLight.shadow.mapSize.height = 1024;
 scene.add(directionalLight);
 
 
+
+function LightSwing() {
+    directionalLight.position.set(2, 4, 3);
+
+
+}
+
+
 // Ajout d'un plan pour le sol avec un matériau standard
 const planeGeometry = new THREE.PlaneGeometry(20, 20);
 const planeMaterial = new THREE.MeshStandardMaterial({ 
-    color: 0xF5F5DC,
+    color: 0x707070,
     roughness: 1,
     metalness: 0
 });

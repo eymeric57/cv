@@ -1,0 +1,261 @@
+body {
+    overflow-x: hidden;
+    margin: 0px;
+    font-family: monospace;
+    color: white;
+}
+
+#c {
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+   
+}
+
+h1 {
+    color: black;
+}
+
+h2 {
+    color: red;
+}
+
+p {
+    color: black;
+}
+
+#lastTitle {
+    margin-top: 150px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+main {
+    width: 100vw;
+    height: 200vw;
+    z-index: 99;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    font-size: 5vh;
+   
+}
+
+section {
+    min-height: 100vh;
+    padding: 20px;
+    font-size: 4vh;
+    z-index: 1;
+}
+
+#scrollProgress {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 99;
+    font-size: 3vh;
+}
+
+
+
+
+
+
+
+.contact {
+    position: absolute;
+        cursor: pointer;
+        color: red;
+        z-index: 2;
+}
+
+#end {
+   visibility: hidden; 
+  
+}
+
+#test {
+    margin: 250px auto;
+}
+
+#doteAnime {
+animation: dote 1s infinite;
+}
+
+@keyframes dote {
+    0%  {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+
+
+ /**  screen cv part **/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+
+ .screen {
+    background-color: black;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    padding: 10px;
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+ 
+  
+   
+ }
+
+ button {
+    border: solid 1px white ;
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    margin-left: 20px;
+ }
+ button:hover {
+    cursor: pointer;
+
+    color: greenyellow;
+    border-color: greenyellow;
+   
+    
+ }
+
+  .cv {
+    width: 50%;
+  }
+ li {
+    list-style: none;
+ 
+}
+.cmd {
+    padding: 10px 0;
+    color: green;
+ }
+
+
+ h2 {
+    color: red;
+    padding-bottom: 
+    5px;
+ }
+
+ #atout, #competence, #contact,#formation, #experience, #contact, #travaux{
+    opacity: 1;
+  
+    
+ }
+
+
+ #top {
+   
+    color: black;
+    font-size: 0.8rem;
+    text-align: center;
+    display: flex;
+   align-items: center;
+   gap: 10px;
+   padding-left: 10px;
+   border: solid 1px grey;
+ }
+ #top:hover {
+    cursor: pointer;
+
+ }
+
+ #top2{
+
+    color: black;
+    font-size: 0.8rem;
+    text-align: center;
+    display: flex ;
+    visibility: hidd;
+    align-items: center;
+    border: solid 1px grey;
+ }
+
+ #top2:hover {
+    cursor: pointer;
+
+ }
+
+ .navbar {
+
+    top: 0;
+    display: flex;
+justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    height: 25px;
+    border-top: 1px grey solid;
+ 
+   
+ }
+ .windows {
+    display: flex;
+
+ }
+ #topEnd {
+    display: flex;
+padding: 5px 10px;
+    align-items: center;
+    right: 0;
+
+ }
+
+ #cross {
+    color: black;
+    border: solid black 2px;
+
+ }
+
+ #cross:hover {
+   
+    border-color: grey;
+    cursor: pointer;
+    scale: 1.05;
+    transition: 0.5s;
+
+    
+ }
+
+ .borderScreen {
+    border-left: solid 1px grey;
+    border-right: solid 1px grey;
+    height: 100vh;
+ }
+
+ .contactP {
+    color: white;
+   
+ }
+
+ a{
+   font-size: 0.8rem;
+   text-decoration: none;
+   color: black;
+ }
+
+ #redirTravaux {
+    color:purple;
+    font-size: 1rem;
+  }
+  #redirTravaux:hover {
+    cursor: pointer;
+ 
+  }

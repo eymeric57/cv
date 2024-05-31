@@ -13,7 +13,7 @@ function hophop(id, callback) {
       texte.innerHTML += contenu.charAt(index);
       index++;
       num++;
-      console.log(num);
+     
     } else {
       clearInterval(timer);
       if (callback) callback();
@@ -44,8 +44,15 @@ function chain() {
 
           hophop("test5", function () {
             setTimeout(() => {
-                contact.style.opacity = "1";
+                travaux.style.opacity = "1";
               }, "300");
+              hophop("test6", function () {
+                setTimeout(() => {
+                    contact.style.opacity = "1";
+                  }, "300");
+                  
+              });
+              
           });
         });
       });
@@ -55,10 +62,21 @@ function chain() {
 
 chain();
 
-
 // retour a la scene
 const cross = document.getElementById('cross');
 cross.addEventListener('click', () => {
   window.location.href = 'index.html';
   window.scrollTo(0, document.body.scrollHeight);
 })
+
+const redir = document.getElementById('redirTravaux');
+const top2 = document.getElementById('top2')
+
+redir.addEventListener('click',() => {
+
+  window.location.href = 'index4.html';
+  top2.style.visibility = 'visible';
+
+})
+
+
