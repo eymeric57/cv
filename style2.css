@@ -1,45 +1,191 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Kode+Mono:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Kode+Mono:wght@400..700&family=Rubik+Mono+One&display=swap');
+
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ 
+}
+
 body {
-    background-color: black;
+    overflow-x: hidden;
+    margin: 0px;
+    font-family: "kode Mono", monospace;
+    font-weight: 700;
     color: white;
-    padding: 15px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.nav {
+
+
+ /**  screen / border **/
+
+
+ .screen {
+    background-color: black;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    padding: 10px;
+    height: 96vh;
     display: flex;
-    gap: 100px;
+    flex-direction: column;
+    flex-wrap: wrap;
+   
+ }
+
+ .navbar {
+   top: 0;
+   display: flex;
+justify-content: space-between;
+   width: 100%;
+   margin: 0 auto;
+   height: 25px;
+   border-top: 1px grey solid;
+
+}
+.windows {
+   display: flex;
 }
 
-h3 {
-    font-size: 1rem;
-    padding-top: 30px;
-    font-weight: 330;
+.borderScreen {
+   border-left: solid 1px grey;
+   border-right: solid 1px grey;
+
 }
+
+
+/**----------------------Navbar----------------------**/
+
+#top {
+   
+   color: black;
+   font-size: 0.8rem;
+   text-align: center;
+   display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 10px;
+  border: solid 1px grey;
+}
+#top:hover {
+   cursor: pointer;
+
+}
+
+#top2{
+
+   color: black;
+   font-size: 0.8rem;
+   text-align: center;
+   display: flex ;
+   visibility: hidden;
+   align-items: center;
+   border: solid 1px grey;
+}
+.ProjectPage {
+   color: black;
+}
+
+#top2:hover {
+   cursor: pointer;
+
+}
+
+
+#topEnd {
+   display: flex;
+padding: 5px 10px;
+   align-items: center;
+   right: 0;
+
+}
+
+#cross {
+   color: black;
+   border: solid black 2px;
+
+}
+
+#cross:hover {
+  
+   border-color: grey;
+   cursor: pointer;
+   scale: 1.05;
+   transition: 0.5s;
+   
+}
+
+
+
+/**--------------------------------------------**/
+
+
+
+
+
+  .cv {
+    width: 50%;
+  }
+
+  .cmd {
+   padding: 10px 0px 0px;
+   color: green;
+   font-size: 1.4rem;
+}
+
+
 h2 {
-    padding: 30px 0px;
-    font-size: 1rem;
+   color: red;
+   padding-bottom: 5px;
+   font-size: 1.5rem;
+   text-transform: capitalize;
+   font-weight: 400;
+  font-family: "Rubik Mono One", monospace;
+   padding-top: 20px;
 }
 
-li {
-    padding-left: 30px;
+ li {
     list-style: none;
-    font-weight: 100;
-}
+    font-family: "chivo Mono", monospace;
+    font-size: 1.2rem;
+} 
 
-p {
-    padding-top: 100px;
-}
 
-.anim {
-    animation: anim 0.5s infinite;
-}
+ #atout, #competence, #contact,#formation, #experience, #contact, #travaux{
+    opacity: 0;   
+ }
 
-@keyframes anim {
-    0% {
-        opacity: 1;
-    }    
-    100% {
-        opacity: 0;
-    }
-}
 
+ .contactP {
+    color: white;
+   
+ }
+
+ a{
+   font-size: 0.8rem;
+   text-decoration: none;
+   color: rgb(255, 0, 0);
+ }
+
+ #redirTravaux {
+   color:purple;
+   font-size: 1.6rem;
+ }
+ #redirTravaux:hover {
+   cursor: pointer;
+
+ }
+
+ .title {
+   color: azure;
+   font-size: 2rem;
+ }
+
+ .cdSkill{
+   font-size: 1.4rem;
+ }

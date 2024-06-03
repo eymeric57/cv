@@ -1,107 +1,27 @@
-body {
-    overflow-x: hidden;
-    margin: 0px;
-    font-family: monospace;
-    color: white;
-}
 
-#c {
-    position:fixed;
-    top: 0;
-    left: 0;
-    z-index: 0;
-   
-}
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&display=swap');
 
-h1 {
-    color: black;
-}
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Kode+Mono:wght@400..700&display=swap');
 
-h2 {
-    color: red;
-}
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Kode+Mono:wght@400..700&family=Rubik+Mono+One&display=swap');
 
-p {
-    color: black;
-}
-
-#lastTitle {
-    margin-top: 150px;
-    color: white;
-    font-size: 1.5rem;
-}
-
-main {
-    width: 100vw;
-    height: 200vw;
-    z-index: 99;
-    position: relative;
-    justify-content: center;
-    text-align: center;
-    font-size: 5vh;
-   
-}
-
-section {
-    min-height: 100vh;
-    padding: 20px;
-    font-size: 4vh;
-    z-index: 1;
-}
-
-#scrollProgress {
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-    z-index: 99;
-    font-size: 3vh;
-}
-
-
-
-
-
-
-
-.contact {
-    position: absolute;
-        cursor: pointer;
-        color: red;
-        z-index: 2;
-}
-
-#end {
-   visibility: hidden; 
-  
-}
-
-#test {
-    margin: 250px auto;
-}
-
-#doteAnime {
-animation: dote 1s infinite;
-}
-
-@keyframes dote {
-    0%  {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-    
-}
-
-
-
- /**  screen cv part **/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 1rem;
+  
+ }
+body {
+    overflow-x: hidden;
+    margin: 0px;
+    font-family: "kode Mono", monospace;
+    font-weight: 700;
+    color: white;
 }
+
+
+
+ /**  screen / Border **/
 
 
  .screen {
@@ -114,52 +34,33 @@ animation: dote 1s infinite;
     flex-direction: column;
     flex-wrap: wrap;
     
+ }
+
+ .navbar {
+
+    top: 0;
+    display: flex;
+justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    height: 25px;
+    border-top: 1px grey solid;
  
-  
    
  }
+ .windows {
+    display: flex;
 
- button {
-    border: solid 1px white ;
-    background: black;
-    color: white;
-    padding: 5px 10px;
-    font-size: 1.2rem;
-    margin-left: 20px;
- }
- button:hover {
-    cursor: pointer;
-
-    color: greenyellow;
-    border-color: greenyellow;
-   
-    
- }
-
-  .cv {
-    width: 50%;
-  }
- li {
-    list-style: none;
- 
-}
-.cmd {
-    padding: 10px 0;
-    color: green;
  }
 
 
- h2 {
-    color: red;
-    padding-bottom: 
-    5px;
+ .borderScreen {
+    border-left: solid 1px grey;
+    border-right: solid 1px grey;
+    height: 96vh;
  }
 
- #atout, #competence, #contact,#formation, #experience, #contact, #travaux{
-    opacity: 1;
-  
-    
- }
+ /**  ----------------------------navbar----------------- **/
 
 
  #top {
@@ -184,7 +85,7 @@ animation: dote 1s infinite;
     font-size: 0.8rem;
     text-align: center;
     display: flex ;
-    visibility: hidd;
+   
     align-items: center;
     border: solid 1px grey;
  }
@@ -194,22 +95,10 @@ animation: dote 1s infinite;
 
  }
 
- .navbar {
-
-    top: 0;
-    display: flex;
-justify-content: space-between;
-    width: 100%;
-    margin: 0 auto;
-    height: 25px;
-    border-top: 1px grey solid;
+ .ProjectPage {
+    color: black !important;
+ }
  
-   
- }
- .windows {
-    display: flex;
-
- }
  #topEnd {
     display: flex;
 padding: 5px 10px;
@@ -234,11 +123,35 @@ padding: 5px 10px;
     
  }
 
- .borderScreen {
-    border-left: solid 1px grey;
-    border-right: solid 1px grey;
-    height: 100vh;
- }
+ /****------------------------------------***/
+
+ .cv {
+    width: 50%;
+  }
+
+  .cmd {
+   padding: 10px 0px 0px;
+   color: green;
+   font-size: 1.4rem;
+}
+
+
+h2 {
+   color: red;
+   padding-bottom: 5px;
+   font-size: 1.5rem;
+   text-transform: capitalize;
+   font-weight: 400;
+  font-family: "Rubik Mono One", monospace;
+   padding-top: 20px;
+}
+
+ li {
+    list-style: none;
+    font-family: "chivo Mono", monospace;
+    font-size: 1.2rem;
+} 
+
 
  .contactP {
     color: white;
@@ -248,14 +161,28 @@ padding: 5px 10px;
  a{
    font-size: 0.8rem;
    text-decoration: none;
-   color: black;
+   color: rgb(255, 0, 0);
  }
 
  #redirTravaux {
-    color:purple;
-    font-size: 1rem;
-  }
-  #redirTravaux:hover {
-    cursor: pointer;
+   color:purple;
+   font-size: 1.6rem;
+ }
+ #redirTravaux:hover {
+   cursor: pointer;
+
+ }
+
+ .title {
+   color: azure;
+   font-size: 2rem;
+ }
+
+ .cdSkill{
+   font-size: 1.4rem;
+ }
+
  
-  }
+ 
+
+ 

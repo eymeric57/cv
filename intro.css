@@ -1,0 +1,85 @@
+#c {
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+   
+}
+
+h1 {
+    color: black;
+}
+
+p {
+    color: black;
+}
+
+#lastTitle {
+    margin-top: 150px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+main {
+    width: 100vw;
+    height: 200vw;
+    z-index: 99;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    font-size: 5vh;
+   
+}
+
+section {
+    min-height: 100vh;
+    padding: 20px;
+    font-size: 4vh;
+    z-index: 1;
+}
+
+#scrollProgress {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 99;
+    font-size: 3vh;
+}
+
+
+
+
+
+
+
+.contact {
+    position: absolute;
+        cursor: pointer;
+        color: red;
+        z-index: 2;
+}
+
+#end {
+   visibility: hidden; 
+  
+}
+
+#test {
+    margin: 250px auto;
+    font-size: 1.4rem;
+}
+
+#doteAnime {
+animation: dote 1s infinite;
+}
+
+@keyframes dote {
+    0%  {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    
+}
+

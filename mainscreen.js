@@ -2,7 +2,7 @@ let atout = document.getElementById("atout");
 let competence = document.getElementById("competence");
 let num = 0;
 
-function hophop(id, callback) {
+function TextAnimation(id, callback) {
   let texte = document.getElementById(id);
   let contenu = texte.innerHTML;
   texte.innerHTML = "";
@@ -22,31 +22,31 @@ function hophop(id, callback) {
 }
 
 function chain() {
-  hophop("test", function () {
+  TextAnimation("animation1", function () {
     setTimeout(() => {
       atout.style.opacity = "1";
     }, "300");
 
-    hophop("test2", function () {
+    TextAnimation("animation2", function () {
       setTimeout(() => {
         competence.style.opacity = "1";
       }, "300");
 
-      hophop("test3", function () {
+      TextAnimation("animation3", function () {
         setTimeout(() => {
           experience.style.opacity = "1";
         }, "300");
 
-        hophop("test4", function () {
+        TextAnimation("animation4", function () {
           setTimeout(() => {
             formation.style.opacity = "1";
           }, "300");
 
-          hophop("test5", function () {
+          TextAnimation("animation5", function () {
             setTimeout(() => {
                 travaux.style.opacity = "1";
               }, "300");
-              hophop("test6", function () {
+              TextAnimation("animation6", function () {
                 setTimeout(() => {
                     contact.style.opacity = "1";
                   }, "300");

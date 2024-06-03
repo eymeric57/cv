@@ -1,0 +1,254 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Kode+Mono:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Kode+Mono:wght@400..700&family=Rubik+Mono+One&display=swap');
+
+
+
+
+body {
+    overflow-x: hidden;
+    margin: 0px;
+    font-family: "kode Mono", monospace;
+    color: white;
+}
+
+
+
+
+
+
+ /**  screen cv part **/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+
+ /**  screen / border **/
+
+ .screen {
+    background-color: black;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    padding: 10px;
+    height: 96vh;
+
+    
+ }
+
+ .d-screen{
+        display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 90%;
+    justify-content: space-around;
+ }
+
+
+
+ .navbar {
+
+  top: 0;
+  display: flex;
+justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  height: 25px;
+  border-top: 1px grey solid;
+
+ 
+}
+.windows {
+  display: flex;
+
+}
+
+
+.borderScreen {
+  border-left: solid 1px grey;
+  border-right: solid 1px grey;
+  height: 100vh;
+}
+
+ 
+/**----------------------Navbar----------------------**/
+
+ #top {
+   
+  color: black;
+  font-size: 0.8rem;
+  text-align: center;
+  display: flex;
+ align-items: center;
+ gap: 10px;
+ padding-left: 10px;
+ border: solid 1px grey;
+}
+#top:hover {
+  cursor: pointer;
+
+}
+
+#top2{
+
+  color: black;
+  font-size: 0.8rem;
+  text-align: center;
+  display: flex ;
+  visibility: hidd;
+  align-items: center;
+  border: solid 1px grey;
+}
+
+#top2:hover {
+  cursor: pointer;
+
+}
+
+#topEnd {
+  display: flex;
+padding: 5px 10px;
+  align-items: center;
+  right: 0;
+
+}
+
+#cross {
+  color: black;
+  border: solid black 2px;
+
+}
+
+#cross:hover {
+ 
+  border-color: grey;
+  cursor: pointer;
+  scale: 1.05;
+  transition: 0.5s;
+
+  
+}
+
+
+/**--------------------------------------------**/
+
+
+
+
+  .cv {
+    width: 50%;
+  }
+
+
+.cmd {
+  padding: 10px 0px 0px;
+  color: green;
+  font-size: 1.4rem;
+}
+
+
+ a{
+   font-size: 0.8rem;
+   text-decoration: none;
+   color: black;
+ }
+
+
+
+
+.game {
+    width: 300px;
+    height: 300px;
+    padding-left: 40px;
+}
+
+.imgFood {
+  background: url(./assets/img/foodApp.png);
+  background-size: contain;
+  height: 150px;
+  background-repeat:no-repeat ;
+  
+}
+
+.imgPlane {
+    background: url(./assets/img/planeGame.png);
+    background-size: contain;
+    height: 150px;
+    background-repeat:no-repeat ;
+    background-position: center;
+    
+  }
+
+  .GithubLink {
+    font-size: 1.2rem;
+    padding: 10px;
+    color: white;
+  }
+
+  .TravauxTitle {
+    font-size: 1.9rem;
+    color: red;
+    text-transform: uppercase;
+    font-family: chivo Mono, monospace;
+    
+  }
+
+  .imgResto {
+    background: url(./assets/img/resto.png);
+    background-size: contain;
+    background-repeat:no-repeat ;
+    background-position: center;
+    height: 150px;
+  }
+
+  
+  .imgVideoGame {
+    background: url(./assets/img/phpGame.png);
+    background-size: contain;
+    background-repeat:no-repeat ;
+    background-position: center;
+    height: 150px;
+  }
+
+  .imgMontagne {
+    background: url(./assets/img/Montagne.png);
+    background-size: contain;
+    background-repeat:no-repeat ;
+    background-position: center;
+    height: 150px;
+  }
+
+  .imgPassword {
+    background: url(./assets/img/password.png);
+    background-size: contain;
+    background-repeat:no-repeat ;
+    background-position: center;
+    height: 150px;
+  }
+
+  .gitLink {
+    color: green;
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+    font-family: "codo mono", monospace;
+   
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    
+  }
+
+
+  .game {
+    margin-top: 10px;
+  }
