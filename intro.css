@@ -21,13 +21,14 @@ p {
 }
 
 main {
-    width: 100vw;
+    width: 50%;
     height: 200vw;
     z-index: 99;
     position: relative;
     justify-content: center;
     text-align: center;
     font-size: 5vh;
+    margin: 0 auto;
    
 }
 
@@ -59,14 +60,14 @@ section {
         z-index: 2;
 }
 
-#end {
-   visibility: hidden; 
-  
+
+#connexionBtn {
+    margin: 250px auto;
+    font-size: 1.8rem;
 }
 
-#test {
-    margin: 250px auto;
-    font-size: 1.4rem;
+#connexionBtn:hover {
+    cursor: pointer;
 }
 
 #doteAnime {
