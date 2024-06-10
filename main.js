@@ -111,7 +111,7 @@ animationScripts.push({
     func: () => {
         camera.position.x = lerp(5, 0, scalePercent(60, 100));
         camera.position.y = lerp(5, 3.35, scalePercent(60, 100));
-        camera.position.z = lerp(10, 0.20, scalePercent(60, 100));
+        camera.position.z = lerp(10, -0.5, scalePercent(60, 100));
         camera.lookAt(cube.position);
     },
 });
